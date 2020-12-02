@@ -1,6 +1,6 @@
 /*
 
-Copyright (C) 2020, Kenta Nakajima
+Copyright (C) 2020, Ryuichi Ueda, Kenta Nakajima
 
 This file is part of task1.
 
@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include<linux/io.h>
 
 // デバイスドライバの情報
-MODULE_AUTHOR("Kenta Nakajima");
+MODULE_AUTHOR("Ryuichi Ueda, Kenta Nakajima");
 MODULE_DESCRIPTION("driver for LED control.");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
