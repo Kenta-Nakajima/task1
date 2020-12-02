@@ -53,6 +53,8 @@ Raspberry Piにつながっている電気部品はLED、タクトスイッチ�
   どれかのスイッチが押されたら、それが離されるまでループに入って待機する。これにより1度の押し下げで何度も反応する状態を防ぐ。</br>SW1が押されたら引数sw1に1、SW2ならsw2=1、SW3でsw3=1を代入する。
 
 
+
+
 This file is part of task1.</br>
 </br>
 task1 is free software: you can redistribute it and/or modify</br>
