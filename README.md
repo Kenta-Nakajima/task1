@@ -53,17 +53,17 @@ Raspberry Piにつながっている電気部品はLED、タクトスイッチ�
   どれかのスイッチが押されたら、それが離されるまでループに入って待機する。これにより1度の押し下げで何度も反応する状態を防ぐ。</br>SW1が押されたら引数sw1に1、SW2ならsw2=1、SW3でsw3=1を代入する。
 
 
-This file is part of task1.
-
-task1 is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-task1 is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
+This file is part of task1.</br>
+</br>
+task1 is free software: you can redistribute it and/or modify</br>
+it under the terms of the GNU General Public License as published by</br>
+the Free Software Foundation, either version 3 of the License, or</br>
+(at your option) any later version.</br>
+</br>
+task1 is distributed in the hope that it will be useful,</br>
+but WITHOUT ANY WARRANTY; without even the implied warranty of</br>
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</br>
+GNU General Public License for more details.</br>
+</br>
+You should have received a copy of the GNU General Public License</br>
 along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
