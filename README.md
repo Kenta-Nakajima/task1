@@ -5,6 +5,9 @@ A task for '"robot system 2020".
 myled.cは2020年度ロボットシステム学の講義で上田先生が作成されたコードを改変したものです。<br>
 myled.cの168, 169, 170行目のコードはRT Corporation様のRaspberry Pi Mouse devide driver</br>
 (https://github.com/rt-net/RaspberryPiMouse/blob/master/src/drivers/rtmouse.c) の585, 587行目からお借りしました。</br>
+Main.c内のファイルを開く関数(36行目)の作成では次のサイトを参考にしました。</br>
+https://qiita.com/Reed_X1319RAY/items/2577cb1e2eb670f4bd3f　</br>
+https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 
 ### task1概要
 Raspberry Pi 4につないだスイッチで10進数の数値を入力すると</br>
