@@ -2,7 +2,7 @@
 A task for '"robot system 2020".
 
 ### 引用
-myled.cは2020年度ロボットシステム学の講義で上田先生が作成したコードを改変したものです。<br>
+myled.cは2020年度ロボットシステム学の講義で上田先生が作成されたコードを改変したものです。<br>
 myled.cの168, 169, 170行目のコードはRT Corporation様のRaspberry Pi Mouse devide driver</br>
 (https://github.com/rt-net/RaspberryPiMouse/blob/master/src/drivers/rtmouse.c) の585, 587行目からお借りしました。</br>
 
@@ -10,8 +10,9 @@ myled.cの168, 169, 170行目のコードはRT Corporation様のRaspberry Pi Mou
 Raspberry Pi 4につないだスイッチで10進数の数値を入力すると</br>
 2進数に変換して7セグメントLEDに表示するプログラムと、LED制御とスイッチの状態を読み取るデバイスドライバです。</br>
 
-Raspberry Piにつながっている電気部品はLED、タクトスイッチです。外観をpic1に示します。</br>
-２つ並んだLEDの左側がLED1、右側がLED2で、３つ並んだタクトスイッチは左側からSW1,SW2,SW3です。</br>
+Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic.JPGに示します。部品が接続されているGPIOピンはPic2.JPGに示します。</br>
+２つ並んだLEDの左側がLED1、右側がLED2で、３つ並んでいるタクトスイッチは左側からSW1,SW2,SW3です。</br>
+
 </br>
 #### myled.c
 デバイスドライバのソースファイルです。</br>
