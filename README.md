@@ -14,7 +14,7 @@ https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 Raspberry Pi 4につないだスイッチで10進数の数値を入力すると</br>
 2進数に変換して7セグメントLEDに表示するプログラムと、LED制御とスイッチの状態を読み取るデバイスドライバです。</br>
 
-Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic.JPGに示します。部品が接続されているGPIOピンはPic2.JPGに示します。</br>
+Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic1.JPGに示します。部品が接続されているGPIOピンはPic2.JPGに示します。</br>
 ２つ並んだLEDの左側がLED1、右側がLED2で、３つ並んでいるタクトスイッチは左側からSW1,SW2,SW3です。</br>
 
 first.bashを実行することでデバイスドライバのインストールとデバイスファイルへの書き込み許可が行われます。</br>
