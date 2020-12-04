@@ -21,11 +21,13 @@ task1にはデバイスドライバ(myled.c)と、myled.cを利用したプロ�
 ### 回路
 task1のために作成した回路の外観を図1に示します。使用したコンピュータはRaspberry Pi 4、接続した電気部品はLEDとタクトスイッチです。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg"> <center>図1: 作成した回路の外観</center> </br>
+
 図1の中で一番左にある部品が7セグメントLEDです。中央の2つ並んだLEDのうち左側がLED1、右側がLED2です。</br>
 右側で3つ並んでいる部品がタクトスイッチです。左側からSW1、SW2、SW3です。</br>
 
 次に、回路図を図2に示します。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic2.jpg"> <center>図2: 回路図</center> </br>
+
 図2の各部品に書かれた数字はRaspberry PiのGPIOピンの番号を表しています。各部品はその番号のGPIOピンに接続されています。 </br>
 LED1,LED2のGPIOピンの出力をONにする(電圧をかける)とLEDが点灯します。</br>
 スイッチに接続されているピンはマイコン内でプルアップされており、スイッチが押されると回路がGNDに繋がって"0"状態となります。</br>
