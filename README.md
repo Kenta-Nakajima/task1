@@ -11,8 +11,17 @@ https://qiita.com/Reed_X1319RAY/items/2577cb1e2eb670f4bd3f　</br>
 https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 
 ### task1概要
+task1にはデバイスドライバ(myled.c)と、それを用いてRaspberry Piの入出力を行うプログラム(Main.c)、さらにデバイスドライバをコンパイルするためのMakefileなどが含まれます。
+
+
+
+
 Raspberry Pi 4につないだスイッチで10進数の数値を入力すると</br>
 2進数に変換して7セグメントLEDに表示するプログラムと、LED制御とスイッチの状態を読み取るデバイスドライバです。</br>
+
+作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
+<img src="Pic.JPG">
+<center>作成した回路の外観</center>
 
 Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic1.JPGに示します。部品が接続されているGPIOピンはPic2.JPGに示します。</br>
 ２つ並んだLEDの左側がLED1、右側がLED2で、３つ並んでいるタクトスイッチは左側からSW1,SW2,SW3です。</br>
@@ -21,7 +30,7 @@ first.bashを実行することでデバイスドライバのインストール�
 さらにMain.cのコンパイルが行われて実行ファイルMainが作成されます。</br>
 Mainを実行することで、10進数を2進数に変換するプログラムが開始されます。</br>
 
-</br>
+### ファイルの説明
 
 #### myled.c
 
