@@ -11,7 +11,7 @@ https://qiita.com/Reed_X1319RAY/items/2577cb1e2eb670f4bd3f　</br>
 https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 
 ### task1概要
-task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry Piの入出力を行うプログラム(Main.c)、デバイスドライバをコンパイルするためのMakefileなどが含まれます。</br>
+task1にはデバイスドライバ(myled.c)と、myled.cを利用したプログラム(Main.c)、デバイスドライバをコンパイルするためのMakefileなどが含まれます。</br>
   myled.cは主に次の2つの役割を持ちます。</br>
   ① Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む</br>
   ② Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する</br>
