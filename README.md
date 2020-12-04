@@ -27,6 +27,9 @@ task1のために作成した回路の外観を図1に示します。Raspberry P
 次に、回路図を図2に示します。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic2.jpg"> <center>図2: 回路図</center> </br>
 図2の各部品に書かれた数字はRaspberry PiのGPIOピンの番号を表しています。各部品はその番号のGPIOピンに接続されています。 </br>
+LED1と2のGPIOピンの出力をONにする(電圧をかける)とLEDが点灯します。</br>
+スイッチに接続されているピンはマイコン内でプルアップされており、スイッチが押されると回路がGNDに繋がって"0"を出力します。</br>
+7セグメントLEDに接続されたGPIOピンはLEDのGNDとして機能するので、GPIOピンの出力をOFFにする(電圧をかけない)とLEDが点灯します。</br>
 
 ### インストール
 Ubuntuでの利用方法を説明します。</br>
