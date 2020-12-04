@@ -13,16 +13,15 @@ https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 ### task1概要
 task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry Piの入出力を行うプログラム(Main.c)、デバイスドライバをコンパイルするためのMakefileなどが含まれます。</br>
 myled.cは主に次の2つの役割を持ちます。
-  1. Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む
-  2. Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する
-</br>
+ 1. Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む
+ 2. Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する
 Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示します。</br>
 
 ### 回路
 task1のために作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg"> <center>図1: 作成した回路の外観</center> </br>
-図1の中で一番左にある部品が7セグメントLEDです。図1の中央の2つ並んだLEDの内、左側がLED1、右側がLED2です。</br>
-図1の右側で３つ並んでいる部品がタクトスイッチです。左側からSW1,SW2,SW3です。</br>
+図1の中で一番左にある部品が7セグメントLED、中央の2つ並んだLEDのうち左側がLED1、右側がLED2です。</br>
+右側で３つ並んでいる部品がタクトスイッチです。左側からSW1,SW2,SW3です。</br>
 
 次に、回路図を図2に示します。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic2.jpg"> <center>図2: 回路図</center> </br>
