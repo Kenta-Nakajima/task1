@@ -1,5 +1,5 @@
 # task1
-A task for '"robot system 2020".
+A task for "robot system 2020".
 
 ### 引用
 myled.cは2020年度ロボットシステム学の講義で上田先生が作成されたコードを改変したものです。<br>
