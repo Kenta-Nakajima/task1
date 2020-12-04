@@ -5,7 +5,7 @@ A task for '"robot system 2020".
 myled.cは2020年度ロボットシステム学の講義で上田先生が作成されたコードを改変したものです。<br>
 myled.cの168, 169, 170行目のコードはRT Corporation様のRaspberry Pi Mouse devide driver</br>
 (https://github.com/rt-net/RaspberryPiMouse/blob/master/src/drivers/rtmouse.c) の585, 587行目からお借りしました。</br>
-Makefileは講義内で上田先生が作成したものを流用しています。<br>
+Makefileは講義内で上田先生が作成されたものを流用しています。<br>
 Main.c内のファイルを開く関数(36行目)の作成では次のサイトを参考にしました。</br>
 https://qiita.com/Reed_X1319RAY/items/2577cb1e2eb670f4bd3f　</br>
 https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
@@ -52,7 +52,7 @@ Ubuntuでの利用方法を説明します。</br>
   3. 文字が0～9のときは7セグメントLEDをその数字の通りに点灯させ、'.'のときは7セグの'.'を点灯、'-'なら7セグを消灯させる。</br>7セグメントLEDは64行目の関数seg()で行う。</br>
   4. LED1は'a'で点灯、'b'で消灯して、LED2は'c'で点灯、'd'で消灯する。</br>
 
-##### そのほかの関数</br>
+##### そのほかの関数：</br>
   1. setPin()...  199行目、GPOIピンの入出力を設定する。</br>
   2. output()...  52行目、出力に設定されたGPIOピンの電圧ON/OFFを切り替え。</br>
 </br>
