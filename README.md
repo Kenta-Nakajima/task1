@@ -15,17 +15,18 @@ task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry
   myled.cは主に次の2つの役割を持ちます。</br>
   ① Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む</br>
   ② Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する</br>
-  Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示するプログラムです。</br>
+  Main.cは10進数を2進数に変換して7セグメントLEDに表示するプログラムです。10進数の入力はRaspberry Piに接続したスイッチで行います。</br>
   Makefileはデバイスドライバをコンパイルするためのファイルです。Linuxのシェルで"$ make"を実行するとコンパイルが行われます。また、"$ make clean"で作成したファイルを削除できます。</br>
 
 ### 回路
 task1のために作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg"> <center>図1: 作成した回路の外観</center> </br>
-図1の中で一番左にある部品が7セグメントLED、中央の2つ並んだLEDのうち左側がLED1、右側がLED2です。</br>
-右側で３つ並んでいる部品がタクトスイッチです。左側からSW1,SW2,SW3です。</br>
+図1の中で一番左にある部品が7セグメントLEDです。中央の2つ並んだLEDのうち左側がLED1、右側がLED2です。</br>
+右側で3つ並んでいる部品がタクトスイッチです。左側からSW1、SW2、SW3です。</br>
 
 次に、回路図を図2に示します。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic2.jpg"> <center>図2: 回路図</center> </br>
+図2の各部品に書かれた数字はRaspberry PiのGPIOピンの番号を表しています。各部品はその番号のGPIOピンに接続されています。 </br>
 
 ### インストール
 Ubuntuでの利用方法を説明します。</br>
@@ -54,7 +55,6 @@ Ubuntuでの利用方法を説明します。</br>
 ##### 3. そのほかの関数</br>
   1. setPin()...  199行目、GPOIピンの入出力を設定する。</br>
   2. output()...  52行目、出力に設定されたGPIOピンの電圧ON/OFFを切り替え。</br>
-
 </br>
 
 #### Main.c
