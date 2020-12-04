@@ -32,7 +32,7 @@ LED1,2のGPIOピンの出力をONにする(電圧をかける)とLEDが点灯し
 7セグメントLEDに接続されたGPIOピンはLEDのGNDとして機能するので、GPIOピンの出力をOFFにする(電圧をかけない)とLEDが点灯します。</br>
 
 ### インストール
-Ubuntuでの利用方法を説明します。</br>
+Ubuntuでの利用方法を説明します。予め"$ make"でmyled.koが作成されている必要があります。</br>
 "$ sudo insmod myled.ko"を実行することでデバイスドライバのインストールが行われます。</br>
 "$ sudo chmod 666 /dev/myled0"で、デバイスファイルへの書き込みを許可します。</br>
 "$ gcc Main.c -o Main"でMain.cの実行ファイルを作成します。</br>
