@@ -11,20 +11,18 @@ https://qiita.com/Reed_X1319RAY/items/2577cb1e2eb670f4bd3f　</br>
 https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 
 ### task1概要
-task1にはデバイスドライバ(myled.c)と、それを用いてRaspberry Piの入出力を行うプログラム(Main.c)、さらにデバイスドライバをコンパイルするためのMakefileなどが含まれます。
+task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry Piの入出力を行うプログラム(Main.c)、デバイスドライバをコンパイルするためのMakefileなどが含まれます。</br>
+myled.cは主に次の2つの役割を持ちます。</br>
+  1. Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む
+  2. Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する
+Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示します。</br>
 
+### 回路
+task1のために作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
+<img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg"> <center>図1: 作成した回路の外観</center> </br>
 
-
-
-Raspberry Pi 4につないだスイッチで10進数の数値を入力すると</br>
-2進数に変換して7セグメントLEDに表示するプログラムと、LED制御とスイッチの状態を読み取るデバイスドライバです。</br>
-
-作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
-<img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg">
-<center>作成した回路の外観</center>
-
-Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic1.JPGに示します。部品が接続されているGPIOピンはPic2.JPGに示します。</br>
-２つ並んだLEDの左側がLED1、右側がLED2で、３つ並んでいるタクトスイッチは左側からSW1,SW2,SW3です。</br>
+Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic1.JPGに示します。</br>
+図1の中で一番左にある部品が7セグメントLEDです。その右隣に2つのが並んでLEDの左側がLED1、右側がLED2で、３つ並んでいるタクトスイッチは左側からSW1,SW2,SW3です。</br>
 
 first.bashを実行することでデバイスドライバのインストールとデバイスファイルへの書き込み許可が行われます。</br>
 さらにMain.cのコンパイルが行われて実行ファイルMainが作成されます。</br>
