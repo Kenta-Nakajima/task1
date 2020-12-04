@@ -19,7 +19,7 @@ task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry
   Makefileはデバイスドライバをコンパイルするためのファイルです。Linuxのシェルで"$ make"を実行するとコンパイルが行われます。また、"$ make clean"で作成したファイルを削除できます。</br>
 
 ### 回路
-task1のために作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
+task1のために作成した回路の外観を図1に示します。コンピュータはRaspberry Pi4、接続した電気部品はLEDとタクトスイッチです。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg"> <center>図1: 作成した回路の外観</center> </br>
 図1の中で一番左にある部品が7セグメントLEDです。中央の2つ並んだLEDのうち左側がLED1、右側がLED2です。</br>
 右側で3つ並んでいる部品がタクトスイッチです。左側からSW1、SW2、SW3です。</br>
