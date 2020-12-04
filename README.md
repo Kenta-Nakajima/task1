@@ -12,11 +12,11 @@ https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 
 ### task1概要
 task1にはデバイスドライバ(myled.c)と、myled.cを利用したプログラム(Main.c)、デバイスドライバをコンパイルするためのMakefileなどが含まれます。</br>
-  myled.cは主に次の2つの役割を持ちます。</br>
+  1. myled.cは主に次の2つの役割を持ちます。</br>
   ① Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む</br>
   ② Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する</br>
-  Main.cは10進数を2進数に変換して7セグメントLEDに表示するプログラムです。10進数の入力はRaspberry Piに接続したスイッチで行います。</br>
-  Makefileはデバイスドライバをコンパイルするためのファイルです。Linuxのシェルで"$ make"を実行するとコンパイルが行われます。また、"$ make clean"で作成したファイルを削除できます。</br>
+  2. Main.cは10進数を2進数に変換して7セグメントLEDに表示するプログラムです。10進数の入力はRaspberry Piに接続したスイッチで行います。</br>
+  3. Makefileはデバイスドライバをコンパイルするためのファイルです。Linuxのシェルで"$ make"を実行するとコンパイルが行われます。また、"$ make clean"で作成したファイルを削除できます。</br>
 
 ### 回路
 task1のために作成した回路の外観を図1に示します。使用したコンピュータはRaspberry Pi 4、接続した電気部品はLEDとタクトスイッチです。</br>
