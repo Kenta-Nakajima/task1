@@ -20,7 +20,7 @@ Raspberry Pi 4につないだスイッチで10進数の数値を入力すると<
 2進数に変換して7セグメントLEDに表示するプログラムと、LED制御とスイッチの状態を読み取るデバイスドライバです。</br>
 
 作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
-<img src="Pic.JPG">
+<img src="/Pictures/Pic.JPG">
 <center>作成した回路の外観</center>
 
 Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。外観をPic1.JPGに示します。部品が接続されているGPIOピンはPic2.JPGに示します。</br>
