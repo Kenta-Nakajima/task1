@@ -15,7 +15,8 @@ task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry
 myled.cは主に次の2つの役割を持ちます。
   1. Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む
   2. Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する
-</br>Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示します。</br>
+</br>
+Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示します。</br>
 
 ### 回路
 task1のために作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
