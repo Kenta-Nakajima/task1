@@ -23,8 +23,8 @@ task1のために作成した回路の外観を図1に示します。Raspberry P
 図1の中で一番左にある部品が7セグメントLEDです。図1の中央の2つ並んだLEDの内、左側がLED1、右側がLED2です。</br>
 図1の右側で３つ並んでいる部品がタクトスイッチです。左側からSW1,SW2,SW3です。</br>
 
-次に、回路図を図2に示します。
-<img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic1.jpg"> <center>図2: 回路図</center> </br>
+次に、回路図を図2に示します。</br>
+<img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic2.jpg"> <center>図2: 回路図</center> </br>
 
 first.bashを実行することでデバイスドライバのインストールとデバイスファイルへの書き込み許可が行われます。</br>
 さらにMain.cのコンパイルが行われて実行ファイルMainが作成されます。</br>
