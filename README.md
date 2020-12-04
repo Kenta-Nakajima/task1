@@ -12,10 +12,11 @@ https://programming-place.net/ppp/contents/c/040.html#rw_open　</br>
 
 ### task1概要
 task1にはデバイスドライバ(myled.c)と、それを活用してRaspberry Piの入出力を行うプログラム(Main.c)、デバイスドライバをコンパイルするためのMakefileなどが含まれます。</br>
-myled.cは主に次の2つの役割を持ちます。
- 1. Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む
- 2. Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する
-Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示します。</br>
+myled.cは主に次の2つの役割を持ちます。</br>
+① Raspberry Piに接続されたスイッチのON/OFF状態をデバイスファイルに書き込む</br>
+② Raspberry Piに接続されたLEDをデバイスファイルから送られてくる指令に従って制御する</br>
+Main.cはRaspberry Piに接続したスイッチから入力された入力した10進数を、2進数に変換してRaspberry Piに接続した7セグメントLEDに表示するプログラムです。</br>
+Makefileはデバイスドライバをコンパイルするためのファイルです。Linuxのシェル画面で"$ make"を実行するとコンパイルが行われます。また、"$ make clean"で作成したファイルを削除できます。</br>
 
 ### 回路
 task1のために作成した回路の外観を図1に示します。Raspberry Piにつないでいる電気部品はLED、タクトスイッチです。</br>
@@ -26,16 +27,18 @@ task1のために作成した回路の外観を図1に示します。Raspberry P
 次に、回路図を図2に示します。</br>
 <img src="https://github.com/Kenta-Nakajima/task1/blob/main/Pictures/Pic2.jpg"> <center>図2: 回路図</center> </br>
 
-first.bashを実行することでデバイスドライバのインストールとデバイスファイルへの書き込み許可が行われます。</br>
-さらにMain.cのコンパイルが行われて実行ファイルMainが作成されます。</br>
-Mainを実行することで、10進数を2進数に変換するプログラムが開始されます。</br>
+### インストール
+Ubuntuでの利用方法を説明します。</br>
+"$ sudo insmod myled.ko"を実行することでデバイスドライバのインストールが行われます。</br>
+"$ sudo chmod 666 /dev/myled0"で、デバイスファイルへの書き込みを許可します。</br>
+"$ gcc Main.c -o Main"でMain.cの実行ファイルを作成します。</br>
+ここまでの処理は"$ ./first.bash"で1度に行えます。</br>
+"$ ./Main"でMain.cの実行ファイルを実行します。</br>
+"$ sudo rmmod myled"でデバイスドライバのアンインストールが行えます。</br>
 
 ### ファイルの説明
-
 #### myled.c
-
 デバイスドライバのソースファイルです。</br>
-
 ##### 機能：</br>
 ##### 1. スイッチの状態を送信</br>
   1. 関数sushi_read()内の168～170行目で３つのスイッチの状態(押されている：0, 押されていない：1)を確認する。</br>
